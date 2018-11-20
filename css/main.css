@@ -1,9 +1,45 @@
 * {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-body html {
+body, html {
   margin: 0;
   width: 100%;
+}
+
+body {
+  background: #eee;
+}
+
+.mainWrapper {
+  padding: 0 2% 0 2%;
+  background: white;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mainWrapper .formField {
+  padding-bottom: 10%;
+}
+
+.mainWrapper .formField input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 5px;
+  border: #ccc solid 1px;
+}
+
+.mainWrapper .logInHeader {
+  margin-bottom: 12px;
+  color: #4d4d4d;
 }
 /*# sourceMappingURL=main.css.map */
