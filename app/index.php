@@ -6,6 +6,6 @@ $pages = $db->query("
     SELECT id, code, name
     FROM products
 ")->fetchAll(PDO::FETCH_ASSOC);
+echo "test";
 
-require 'home.php';
 ?>

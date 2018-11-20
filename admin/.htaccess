@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Restricted Area"
-AuthUserFile /Users/zak/Documents/GitHub/sklad/admin/.htpasswd
-require valid-user
