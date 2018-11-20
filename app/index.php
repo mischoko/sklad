@@ -8,3 +8,4 @@ $pages = $db->query("
 ")->fetchAll(PDO::FETCH_ASSOC);
 
 require 'home.php';
+?>
