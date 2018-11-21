@@ -19,7 +19,6 @@ if(isset($_POST['name'])){
     if (count($results) === 1){
         $_SESSION['username'] = $name;
         header('location:login.php');
-        
     }
 }
 
