@@ -18,11 +18,38 @@ else{
 <main class="headWrapLogin">
     <div class="margins">
         <h1> Home page Display of products</h1>
-            <ul>
+        <div class="mainFlex">
+            <div class="column">
+                <h2>Kód</h2>
                 <?php foreach($pages as $page) { ?>
                     <li> <?php echo $page['name']; ?></li>
                 <?php } ?>
-            </ul>
+            </div>
+            <div class="column">
+                <h2>Názov</h2>
+                <?php foreach($pages as $page) { ?>
+                    <li> <?php echo $page['name']; ?></li>
+                <?php } ?>
+            </div>
+            <div class="column">
+                <h2>Cena</h2>
+                <?php foreach($pages as $page) { ?>
+                    <li> <?php echo $page['name']; ?></li>
+                <?php } ?>
+            </div>
+            <div class="column">
+                <h2>Značka</h2>
+                <?php foreach($pages as $page) { ?>
+                    <li> <?php echo $page['name']; ?></li>
+                <?php } ?>
+            </div>
+            <div class="column">
+                <h2>Názov</h2>
+                <?php foreach($pages as $page) { ?>
+                    <li> <?php echo $page['name']; ?></li>
+                <?php } ?>
+            </div>
+        <div>
     <div>
 </main>
 

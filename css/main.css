@@ -11,6 +11,16 @@ body {
   background: #eee;
 }
 
+h2 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: .9em;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
 .mainWrapper {
   padding: 0 2% 0 2%;
   background: white;
@@ -51,6 +61,35 @@ body {
   margin-right: 18%;
   margin-top: 20px;
   border-radius: 2px;
+}
+
+.headWrapLogin .margins .mainFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headWrapLogin .margins .mainFlex .column h2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.headWrapLogin .margins .mainFlex .column li {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 11px;
+  color: rgba(0, 0, 0, 0.87);
+  padding-bottom: 10px;
+  border-top: solid rgba(0, 0, 0, 0.12) 1px;
 }
 
 .headWrapLogin .margins h1 {
