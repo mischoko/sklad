@@ -18,7 +18,7 @@ if(isset($_POST['name'])){
 
     if (count($results) === 1){
         $_SESSION['username'] = $name;
-        header('location:login.php');
+            header('location:login.php');            
     }
 }
 
@@ -31,7 +31,7 @@ if(isset($_POST['name'])){
             <label for="name">Meno: </label><br>
                 <input name="name" type="text" placeholder="username" required><br>
             <label for="name">Heslo: </label><br>
-                <input name="pass" type="password" placeholder="password" required><br>
+                <input name="pass" type="text" placeholder="password" required><br>
                 <button name="submit" value="submit" type="submit" >Submit</button>
         </form>    
     </div>
