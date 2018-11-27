@@ -31,17 +31,15 @@ else{
                 <tr>
                     <?php foreach($pages as $page){?>
                 </tr>
-                <tr>
-                </tr>
                         <td> <?php echo $page['code']; ?></td>
                         <td> <?php echo $page['name']; ?></td>
                         <td> <?php echo $page['price']; ?></td>
                         <td> <?php echo $page['brand']; ?></td>
                         <td> <?php echo $page['created']; ?></td>
                         <td> <?php echo $page['edited']; ?></td>
-                        <td> <?php foreach($tbdel as $code){?><td><?php echo $code['code']; ?></td><?php }?></td>
+                        <!-- <td> <?php foreach($tbdel as $code){?><td><?php echo $code['code']; ?></td><?php }?></td> -->
+                        <td><form method="post"><button name="submit" type="submit" class="button">Delete<?php echo $page['code'];?></button></form></td>
                         <?php }?>
-                        <!-- <form method="post"><button name="submit" type="submit" class="button">Delete<?php echo $tbs['code'];?></button></form>     -->
             </tbody>
         </table>
     <div>
