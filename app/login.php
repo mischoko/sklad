@@ -15,41 +15,35 @@ if (empty($pages)){
 }
 else{
 ?>
+
 <main class="headWrapLogin">
-    <div class="margins">
-        <h1> Home page Display of products</h1>
-        <div class="mainFlex">
-            <div class="column">
-                <h2>Kód</h2>
-                <?php foreach($pages as $page) { ?>
-                    <li> <?php echo $page['name']; ?></li>
-                <?php } ?>
-            </div>
-            <div class="column">
-                <h2>Názov</h2>
-                <?php foreach($pages as $page) { ?>
-                    <li> <?php echo $page['name']; ?></li>
-                <?php } ?>
-            </div>
-            <div class="column">
-                <h2>Cena</h2>
-                <?php foreach($pages as $page) { ?>
-                    <li> <?php echo $page['name']; ?></li>
-                <?php } ?>
-            </div>
-            <div class="column">
-                <h2>Značka</h2>
-                <?php foreach($pages as $page) { ?>
-                    <li> <?php echo $page['name']; ?></li>
-                <?php } ?>
-            </div>
-            <div class="column">
-                <h2>Názov</h2>
-                <?php foreach($pages as $page) { ?>
-                    <li> <?php echo $page['name']; ?></li>
-                <?php } ?>
-            </div>
-        <div>
+    <div class="container">
+        <h1 class="title"> Home page Display of products</h1>
+        
+        <table class="table is-striped">
+            <thead>
+                <th>Kód</th>
+                <th>Názov</th>
+                <th>Cena</th>
+                <th>Značka</th>
+                <th>Vytvorené</th>
+                <th>Upravené</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <?php foreach($pages as $page){?>
+                </tr>
+                        <td> <?php echo $page['code']; ?></td>
+                        <td> <?php echo $page['name']; ?></td>
+                        <td> <?php echo $page['price']; ?></td>
+                        <td> <?php echo $page['brand']; ?></td>
+                        <td> <?php echo $page['created']; ?></td>
+                        <td> <?php echo $page['edited']; ?></td>
+                        
+                        <?php }?>
+                        
+            </tbody>
+        </table>
     <div>
 </main>
 
