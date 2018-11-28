@@ -5,17 +5,66 @@
 body, html {
   margin: 0;
   width: 100%;
+  height: 100vh;
 }
 
 body {
   background: #eee;
 }
 
-ul {
-  padding-top: 10px;
+.center {
+  text-align: center;
+  padding-top: 40px;
 }
 
-ul:nth-child(even) {
-  color: #8d8d8d;
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: white;
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.main h1 {
+  margin-bottom: 10px !important;
+}
+
+.main .formField {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.main .formField input {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.main .formField button {
+  margin-top: 10px;
+}
+
+.table td, .table th {
+  vertical-align: inherit !important;
+}
+
+.labelModal {
+  margin: 10px 0px 10px 0px;
+}
+
+.marginBtn {
+  margin-top: 25px;
+}
+
+.marginBtn .cancel {
+  float: right;
 }
 /*# sourceMappingURL=main.css.map */
