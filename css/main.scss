@@ -23,7 +23,7 @@ body{
     transform: translate(-50%, -50%);
     background: white;
     margin: 0 auto;
-    width: 300px;
+    width: 378px;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -57,4 +57,34 @@ body{
     .cancel{
         float: right;
     }
+}
+
+.select{
+    margin-top: 10px;
+}
+.labelSel{
+    display: block;
+    margin-top: 10px;
+}
+
+.addProd{
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 25px;
+}
+
+.message-body{
+    text-align: center;
+}
+
+#show_up{
+	width: 200px;
+	height: 200px;
+	border: 1px solid #ddd;
+	display: none;
+}
+#show_up a{
+	border-bottom: 1px solid #ddd;
+	display: block;
+	padding: 5px;
 }

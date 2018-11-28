@@ -26,6 +26,7 @@ if(isset($_POST['name'])){
                 <input class="input is-primary" name="name" type="text" placeholder="&nbsp;Meno" required><br>
             <label for="name">Heslo: </label><br>
                 <input class="input is-primary" name="pass" type="text" placeholder="&nbsp;Heslo" required><br>
+                <div class="g-recaptcha" data-sitekey="6LfqpX0UAAAAAA6d_4JzMmvEeAYfTBewdbZqxlww"></div>
                 <button class="button is-primary" name="submit" value="submit" type="submit" >Prihlásiť sa</button>
         </form>    
     </div>
