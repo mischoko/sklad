@@ -104,6 +104,13 @@ else {?>
                 </form>
             </div>
         </div>
+
+<div class="tabs is-centered is-toggle">
+  <ul id="wrap">
+    <li v-for="cat in cats"><a>{{cat}}</a><li>
+  </ul>
+</div>
+
         <table class="table is-striped container">
             <thead>
                 <th>Kód</th>

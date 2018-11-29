@@ -100,4 +100,19 @@ body {
   display: block;
   padding: 5px;
 }
+
+#wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 500px;
+  margin-top: -25px;
+}
+
+#wrap li {
+  margin-top: 25px;
+}
+
+.red {
+  color: red;
+}
 /*# sourceMappingURL=main.css.map */

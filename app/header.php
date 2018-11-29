@@ -9,5 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
 </head>
 <body>

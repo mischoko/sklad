@@ -88,3 +88,16 @@ body{
 	display: block;
 	padding: 5px;
 }
+
+#wrap{
+    flex-wrap: wrap;
+    width: 500px;
+    margin-top: -25px;
+    li{
+        margin-top: 25px;
+    }
+}
+
+.red{
+    color: red;
+}
