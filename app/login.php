@@ -47,6 +47,7 @@ if (empty($pages)){
                                 <option>Pulóvre a tričká</option>
                                 <option>Vesty</option>
                                 <option>Košele a blúzky</option>
+                                <option>Komplety & súpravy</option>
                                 <option>Doplnky</option>
                             </select>
                         </div>
@@ -92,6 +93,7 @@ else {?>
                                 <option>Pulóvre & tričká</option>
                                 <option>Vesty</option>
                                 <option>Košele & blúzky</option>
+                                <option>Komplety & súpravy</option>
                                 <option>Doplnky</option>
                             </select>
                         </div>
