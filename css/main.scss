@@ -59,6 +59,10 @@ body{
     }
 }
 
+.marginMini{
+    margin-top: 20px;
+}
+
 .select{
     margin-top: 10px;
 }
@@ -98,6 +102,13 @@ body{
     }
 }
 
-.red{
-    color: red;
+.active{
+    background-color: #3273dc;
+    border-color: #3273dc;
+    color: #fff !important;
+    &:hover{
+        background-color: #3273dc !important;
+        border-color: noner !important;
+        color: #fff !important;
+    }
 }

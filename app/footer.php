@@ -10,8 +10,27 @@
 
 new Vue({
     el: '#wrap',
-    data: {
-        cats: ['Všetky','Nohavice','Šaty a Sukne','Bundy a Kabáty','Kardigány','Svetre','Pulóvre a tričká','Vesty','Košele a blúzky','Komplety a súpravy','Doplnky']
+    data () {
+        return {
+            active: false,
+            cats: [
+                { name: 'Všetky', url: '?all' },
+                { name: 'Nohavice', url: '?nohavice' },
+                { name: 'Šaty a Sukne', url: '?sukne' },
+                { name: 'Bundy a Kabáty', url: '?bundy' },
+                { name: 'Kardigány', url: '?kardigany' },
+                { name: 'Svetre', url: '?svetre' },
+                { name: 'Pulóvre a tričká', url: '?pulovre' },
+                { name: 'Vesty', url: '?vesty' },
+                { name: 'Košele a blúzky', url: '?bluzky' },
+                { name: 'Súpravy', url: '?supravy' },
+                { name: 'Doplnky', url: '?doplnky' }
+            ],
+            activeItem: undefined
+        }
+    },
+    created () {
+        //this.activeItem = this.cats[0];
     }
 })
 

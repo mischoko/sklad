@@ -5,7 +5,42 @@ session_start();
 if ($_SESSION['username'] !== "admin"){
     header ('location:index.php');
 };
-$pages = $db->query("SELECT * FROM products")->fetchAll(PDO::FETCH_ASSOC);
+$getkey = $_SERVER['QUERY_STRING'];
+switch ($getkey) {
+    case "all":
+    $pages = $db->query("SELECT * FROM products")->fetchAll(PDO::FETCH_ASSOC);
+    break;
+    case "nohavice":
+    $pages = $db->query("SELECT * FROM products WHERE type LIKE 'noha%'")->fetchAll(PDO::FETCH_ASSOC);
+    break;
+    case "sukne":
+    $pages = $db->query("SELECT * FROM products WHERE type LIKE '%sukne'")->fetchAll(PDO::FETCH_ASSOC);
+    break;
+    case "bundy":
+    $pages = $db->query("SELECT * FROM products WHERE type LIKE 'bundy%'")->fetchAll(PDO::FETCH_ASSOC);
+    break;
+    case "kardigany":
+    $pages = $db->query("SELECT * FROM products WHERE type LIKE 'kardig%'")->fetchAll(PDO::FETCH_ASSOC);
+    break;
+    case "svetre":
+    $pages = $db->query("SELECT * FROM products WHERE type LIKE 'svetre%'")->fetchAll(PDO::FETCH_ASSOC);
+    break;
+    case "pulovre":
+    $pages = $db->query("SELECT * FROM products WHERE type LIKE 'pul%'")->fetchAll(PDO::FETCH_ASSOC);
+    break;
+    case "vesty":
+    $pages = $db->query("SELECT * FROM products WHERE type LIKE 'vest%'")->fetchAll(PDO::FETCH_ASSOC);
+    break;
+    case "bluzky":
+    $pages = $db->query("SELECT * FROM products WHERE type LIKE 'bl%'")->fetchAll(PDO::FETCH_ASSOC);
+    break;
+    case "supravy":
+    $pages = $db->query("SELECT * FROM products WHERE type LIKE 'komplet%'")->fetchAll(PDO::FETCH_ASSOC);
+    break;
+    case "doplnky":
+    $pages = $db->query("SELECT * FROM products WHERE type LIKE 'dopln%'")->fetchAll(PDO::FETCH_ASSOC);
+    break;
+}
 if (empty($pages)){
     ?>
     <main class="container">
@@ -14,7 +49,8 @@ if (empty($pages)){
         <article class="message">
             <div class="message-header"><p>Data nenájdené</p></div>
             <div class="message-body">
-            <?php echo 'Data nenájdené - chyba internetového pripojenia, databázy, alebo tam proste naozaj nič nie je.';?>
+            <?php echo 'Data nenájdené - chyba internetového pripojenia, databázy, alebo tam proste naozaj nič nie je.';?><br>
+            <button href="https://www.define.sk/sklad/index.php?all" class="button is-warning marginMini"> < Naspäť</button>
             </div>
             <button class="button is-primary addProd" id="addBtn">+ Pridať nový produkt</button>
         </article>
@@ -107,7 +143,7 @@ else {?>
 
 <div class="tabs is-centered is-toggle">
   <ul id="wrap">
-    <li v-for="cat in cats"><a>{{cat}}</a><li>
+    <li v-for="cat in cats"><a v-bind:href="cat.url" v-on:click="activeItem = cat" v-bind:class="{ active: activeItem === cat }">{{cat.name}}</a><li>
   </ul>
 </div>
 
@@ -133,7 +169,9 @@ else {?>
                         <td> <?php echo $page['type']; ?></td>
                         <td><form action="delete.php?code=<?php echo $page['code'];?>" method="post"><button name="submit" type="submit" class="button is-danger">Delete</button></form>
                         </td>
-                        <?php }?>
+                        <?php }
+                        
+                        ?>
             </tbody>
         </table>
     <div>

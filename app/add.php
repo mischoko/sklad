@@ -22,6 +22,6 @@ if (!empty($_POST)){
         'znacka' => $znacka,
         'typ'    => $typ,
     ]);
-    header('location: login.php');
+    header('location: login?all.php');
 }
 ?>
