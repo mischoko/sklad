@@ -50,7 +50,7 @@ if (empty($pages)){
             <div class="message-header"><p>Data nenájdené</p></div>
             <div class="message-body">
             <?php echo 'Data nenájdené - chyba internetového pripojenia, databázy, alebo tam proste naozaj nič nie je.';?><br>
-            <button href="https://www.define.sk/sklad/index.php?all" class="button is-warning marginMini"> < Naspäť</button>
+            <a href="https://www.define.sk/sklad/index.php?all" class="button is-warning marginMini"> < Naspäť</a>
             </div>
             <button class="button is-primary addProd" id="addBtn">+ Pridať nový produkt</button>
         </article>
