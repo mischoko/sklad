@@ -9,5 +9,5 @@ if (isset($_GET['code'])){
     ");
     $deletePage->execute(['code' => $_GET['code']]);
 }
-header ('Location: login?all.php');
+header ('Location: login.php?all');
 ?>

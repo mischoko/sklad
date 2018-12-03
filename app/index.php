@@ -13,7 +13,7 @@ if(isset($_POST['name'])){
     $results = $query->fetchAll();
     if (count($results) === 1){
         $_SESSION['username'] = $name;
-            header('location:login?all.php');            
+            header('location:login.php?all');            
     }
 }
 ?>
