@@ -140,7 +140,7 @@ else {?>
                 </form>
             </div>
         </div>
-
+        
 <div class="tabs is-centered is-toggle">
   <ul id="wrap">
     <li v-for="cat in cats"><a v-bind:href="cat.url" v-on:click="activeItem = cat" v-bind:class="{ active: activeItem === cat }">{{cat.name}}</a><li>

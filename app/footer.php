@@ -12,7 +12,6 @@ new Vue({
     el: '#wrap',
     data () {
         return {
-            active: false,
             cats: [
                 { name: 'Všetky', url: '?all' },
                 { name: 'Nohavice', url: '?nohavice' },
@@ -30,8 +29,9 @@ new Vue({
         }
     },
     created () {
-        //this.activeItem = this.cats[0];
+        this.activeItem = this.cats.find(cat => cat.url === '?<?php echo $getkey ?>');
     }
+    
 })
 
 </script>
